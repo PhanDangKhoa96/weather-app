@@ -1,7 +1,8 @@
 import API from "./API";
+import { api_key } from "./api_key";
 
 export default {
-  getWeather() {
-    return API().get("/weather?q=japan&appid=2a43e938926fdd0132133cabaf940071");
+  getWeather(city: string) {
+    return API().get(`/weather?q=${city}&appid=${api_key}`);
   },
 };
