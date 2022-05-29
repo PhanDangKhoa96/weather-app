@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from "vue";
 import Weather from "../services/weather";
+interface History {
+  id: number;
+  value: string;
+}
 
 // data
-const weather = ref({});
+const weather: any = ref({});
 let search = ref("");
-let history = reactive([]);
+let history: Array<History> = reactive([]);
 const date = computed(() => {
   const d = new Date();
   const days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
