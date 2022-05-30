@@ -78,13 +78,13 @@ await fetchData();
   <main class="main relative text-white">
     <!-- BACK GROUND -->
     <div
-      class="bg-image min-w-full min-h-screen bg-left bg-no-repeat bg-cover relative"
+      class="bg-[url('/assets/images/background.jpg')] min-w-full min-h-screen bg-left bg-no-repeat bg-cover relative"
     >
       <div class="w-full h-full absolute backdrop-blur"></div>
     </div>
     <!-- CONTENT -->
     <div
-      class="content w-[90%] h-[70vh] absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-inherit bg-no-repeat bg-cover grid grid-cols-[2fr_1fr] overflow-hidden"
+      class="bg-[url('/assets/images/background.jpg')] w-[90%] h-[70vh] absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 bg-inherit bg-no-repeat bg-cover grid grid-cols-[2fr_1fr] overflow-hidden"
     >
       <!-- LEFT CONTENT -->
       <div class="p-10 grid content-between">
@@ -184,8 +184,4 @@ await fetchData();
   border-radius: 10px;
 }
 
-.bg-image,
-.content {
-  background-image: url(/assets/images/background.jpg);
-}
 </style>
