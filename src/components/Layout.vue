@@ -59,7 +59,7 @@ const fetchData = async (value: string = "London") => {
 };
 
 const getImg = (name: string) => {
-  return new URL(`../assets/images/${name}.png`, import.meta.url).href;
+  return new URL(`/assets/images/${name}.png`, import.meta.url).href;
 };
 
 const deleteHistory = (index: number) => {
@@ -186,6 +186,6 @@ await fetchData();
 
 .bg-image,
 .content {
-  background-image: url(../assets/images/background.jpg);
+  background-image: url(/assets/images/background.jpg);
 }
 </style>
